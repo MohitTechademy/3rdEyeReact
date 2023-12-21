@@ -1,10 +1,11 @@
-import CameraComponent from "./component/CameraComponent";
+import { RouterProvider } from "react-router-dom";
+import router from "./router";
 
 function App() {
   return (
-    <div>
-     <CameraComponent />
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 
