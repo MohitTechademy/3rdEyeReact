@@ -1,0 +1,15 @@
+.video-size video
+{
+  width: 100%;
+  height: 500px;
+}
+
+.cameraView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textCenter {
+    text-align: center;
+}
