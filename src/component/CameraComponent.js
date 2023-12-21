@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './cameraComponent.scss';
+import YoutubeDemoPlayer from './YoutubeDemoPlayer';
 
 const CameraComponent = () => {
   const [videoStream, setVideoStream] = useState(null);
@@ -26,7 +27,11 @@ const CameraComponent = () => {
 
   return (
     <div>
-     <h1  className='textCenter'>3rd Aeye Camera View</h1>
+      <h1 className='textCenter'>3rd Aeye Demo</h1>
+      <div className='cameraView'>
+      <YoutubeDemoPlayer />
+      </div>
+     <h1 className='textCenter'>3rd Aeye Camera View</h1>
       <div style={{ marginTop: '20px' }}>
         {videoStream && (
           <div className='video-size'>
